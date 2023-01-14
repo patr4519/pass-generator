@@ -1,21 +1,16 @@
 import React from "react";
 import './GeneratorResult.css'
 
-export const GeneratorResult = () => {
+export const GeneratorResult = ({ generatedPass }) => {
     return (
         <div className="generatorResult">
             <p>Your generated results:</p>
             <ul>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
+                {
+                    generatedPass.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))
+                }
             </ul>
         </div>
     );
