@@ -56,6 +56,9 @@ export const GeneratorSettings = () => {
         if (state4) {
             setSymbolsArr(prev => [...prev, '%', '*', ')', '(', '?', '@', '#', '$', '~']);
         }
+        if (state4 === false ) {
+            setSymbolsArr(symbolsArr.filter(item => !/[%*)(?@#$~]/g.test(item)));
+        }
     }, [state4])
 
 
