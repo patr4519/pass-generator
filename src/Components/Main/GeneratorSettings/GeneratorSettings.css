@@ -1,0 +1,16 @@
+.genSetWrapper {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+.checkBoxes {
+    display: flex;
+    flex-direction: column;
+}
+.checkBoxes > input {
+    width: 20px;
+}
+.checkBoxes > label {
+    padding: 3px;
+}
