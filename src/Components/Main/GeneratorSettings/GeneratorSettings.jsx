@@ -3,36 +3,37 @@ import './GeneratorSettings.css'
 import { randomizer } from "../../../Functions/randomizer";
 
 export const GeneratorSettings = () => {
-    const [state1, setState1] = React.useState('');
-    const [state2, setState2] = React.useState('');
-    const [state3, setState3] = React.useState('');
+    const [state1, setState1] = React.useState(true);
+    const [state2, setState2] = React.useState(true);
+    const [state3, setState3] = React.useState(true);
     const [state4, setState4] = React.useState('');
-    const [lengthPass, setLengthPass] = React.useState(6);
-    const [symbolsArr, setSymbolsArr] = React.useState([]);
+    const [lengthPass, setLengthPass] = React.useState(8);
+    const [symbolsArr, setSymbolsArr] = React.useState(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']);
 
     const generate = () => {
+        if (lengthPass > 20) return;
         console.log(randomizer(symbolsArr, lengthPass))
     }
 
     React.useEffect(() => {
-        if (state1) {
-            setSymbolsArr(prev => [...prev, '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']);
-        }
+        // if (state1) {
+        //     setSymbolsArr(prev => [...prev, '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']);
+        // }
         if (state1 === false) {
-            setSymbolsArr(prev => [...prev].filter()
+            console.log('log');
         }
     }, [state1])
 
     React.useEffect(() => {
-        if (state2) {
-            setSymbolsArr(prev => [...prev, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']);
-        }
+        // if (state2) {
+        //     setSymbolsArr(prev => [...prev, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']);
+        // }
     }, [state2])
 
     React.useEffect(() => {
-        if (state3) {
-            setSymbolsArr(prev => [...prev, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']);
-        }
+        // if (state3) {
+        //     setSymbolsArr(prev => [...prev, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']);
+        // }
     }, [state3])
 
     React.useEffect(() => {
@@ -61,7 +62,7 @@ export const GeneratorSettings = () => {
                     </label>
                     <label>
                         <span>Length of password</span>
-                        <input type='number' value={lengthPass} onChange={(e) => setLengthPass(e.target.value)} max='20' min='6' />
+                        <input type='number' value={lengthPass} onChange={(e) => setLengthPass(e.target.value)} max='20' min='8' />
                         <span>symbols</span>
                     </label>
                 </div>
