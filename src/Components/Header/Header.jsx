@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css'
-import key from '../../img/key.png';
+import key from '../../img/keyW.png';
 
 export const Header = () => {
     return (

@@ -3,7 +3,6 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
     height: 50px;
     background-color: #be3144;
     color: white
@@ -15,7 +14,7 @@ header {
 }
 
 .title {
-    width: 190px;
+    width: 210px;
     height: 100%;
     display: flex;
     align-items: center;
