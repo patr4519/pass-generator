@@ -15,6 +15,7 @@ export const GeneratorSettings = () => {
     const generate = () => {
         if (lengthPass > 20) return;
         if (lengthPass < 6) return;
+        if (symbolsArr.length === 0) return;
 
         let passwords = []
 
