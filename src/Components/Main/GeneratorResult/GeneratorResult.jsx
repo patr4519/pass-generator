@@ -1,6 +1,6 @@
 import React from "react";
 import './GeneratorResult.css';
-import copyIMG from '../../../img/copyButton.png';
+import copySVG from '../../../img/copySVG.svg';
 
 export const GeneratorResult = ({ generatedPass }) => {
     return (
@@ -10,7 +10,7 @@ export const GeneratorResult = ({ generatedPass }) => {
                 {
                     generatedPass.map((item, index) => (
                         <li key={index}>{item}
-                            <img src={copyIMG} alt='copy' className='copy'></img>
+                            <img src={copySVG} alt='copy' className='copy'></img>
                         </li>
                     ))
                 }
