@@ -25,7 +25,7 @@ export const GeneratorSettings = () => {
         setGeneratedPass(passwords);
     }
 
-    React.useEffect(() => {
+    React.useEffect(() => {        
         if (state1 === false) {
             setSymbolsArr(symbolsArr.filter(item => !/[0-9]/g.test(item)));
         }
@@ -81,9 +81,9 @@ export const GeneratorSettings = () => {
                             <input type="checkbox" checked={state4} onChange={() => setState4(!state4)} /><span>Spec symbols</span>
                         </label>
                         <label>
-                            <span>Length of password</span>
-                            <input type='number' value={lengthPass} onChange={(e) => setLengthPass(e.target.value)} max='20' min='6' />
-                            <span>symbols</span>
+                            <span>Length of password: </span>
+                            <input className="inputLength" type='number' value={lengthPass} onChange={(e) => setLengthPass(e.target.value)} max='20' min='6' />
+                            <span> symbols</span>
                         </label>
                     </div>
                     <button type="button" onClick={generate}>Generate</button>

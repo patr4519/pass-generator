@@ -5,4 +5,36 @@ header {
     align-items: center;
     border: 1px solid black;
     height: 50px;
+    background-color: #be3144;
+    color: white
+}
+
+.myName {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.title {
+    width: 190px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.key {
+    width: 50px;
+    height: 100%
+}
+
+.myLink {
+    padding: 5px;
+}
+
+.myLink > a {
+    color: white;
+    text-decoration: none;
+}
+.myLink > a:hover {
+    color: black;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import './GeneratorResult.css';
-import copyIMG from '../../../Functions/copyButton.png';
-
+import copyIMG from '../../../img/copyButton.png';
 
 export const GeneratorResult = ({ generatedPass }) => {
     return (
