@@ -1,13 +1,14 @@
 .genSetWrapper {
     width: 400px;
-    height: 250px;
-    border: 1px solid black;
+    height: 270px;
+    /* border: 1px solid black; */
     margin: auto;
 }
 
 .checkBoxes {
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
 }
 
 .checkBoxes>input {
@@ -28,6 +29,7 @@ button {
     display: block;
 }
 
+/* ------------------start button slyle -----------------------------*/
 .button-89 {
     --b: 3px;
     /* border thickness */
@@ -63,7 +65,9 @@ button {
     background: var(--color);
     color: #fff;
 }
+/* ------------------ end button slyle -----------------------------*/
 
+/* ------------------ start toggle slyle ---------------------------*/
 .toggler-wrapper {
     display: block;
     width: 45px;
@@ -113,4 +117,10 @@ button {
 
 .togler {
     display: flex;
+    align-items: center;
+    margin: 5px 0   ;
 }
+.toggleName {
+    margin-left: 3px;
+}
+/* ------------------ end toggle slyle ---------------------------*/

@@ -67,40 +67,40 @@ export const GeneratorSettings = () => {
                 <section>
                     <div className="checkBoxes">
                         <div className="togler">
-                            <label class="toggler-wrapper style-1">
+                            <label className="toggler-wrapper style-1">
                                 <input type="checkbox" checked={state1} onChange={() => setState1(!state1)} />
-                                <div class="toggler-slider">
-                                    <div class="toggler-knob"></div>
+                                <div className="toggler-slider">
+                                    <div className="toggler-knob"></div>
                                 </div>
                             </label>
                             <span className="toggleName">Numbers</span>
                         </div>
 
                         <div  className="togler">
-                            <label class="toggler-wrapper style-1">
+                            <label className="toggler-wrapper style-1">
                                 <input type="checkbox" checked={state2} onChange={() => setState2(!state2)} />
-                                <div class="toggler-slider">
-                                    <div class="toggler-knob"></div>
+                                <div className="toggler-slider">
+                                    <div className="toggler-knob"></div>
                                 </div>
                             </label>
                             <span className="toggleName">Lower case letters</span>
                         </div>
 
                         <div  className="togler">
-                            <label class="toggler-wrapper style-1">
+                            <label className="toggler-wrapper style-1">
                                 <input type="checkbox" checked={state3} onChange={() => setState3(!state3)} />
-                                <div class="toggler-slider">
-                                    <div class="toggler-knob"></div>
+                                <div className="toggler-slider">
+                                    <div className="toggler-knob"></div>
                                 </div>
                             </label>
                             <span className="toggleName">Upper case letters</span>
                         </div>
 
                         <div  className="togler">
-                            <label class="toggler-wrapper style-1">
+                            <label className="toggler-wrapper style-1">
                                 <input type="checkbox" checked={state4} onChange={() => setState4(!state4)} />
-                                <div class="toggler-slider">
-                                    <div class="toggler-knob"></div>
+                                <div className="toggler-slider">
+                                    <div className="toggler-knob"></div>
                                 </div>
                             </label>
                             <span className="toggleName">Spec symbols</span>
