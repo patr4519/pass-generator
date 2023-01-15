@@ -9,9 +9,9 @@ export const GeneratorResult = ({ generatedPass }) => {
             <ul>
                 {
                     generatedPass.map((item, index) => (
-                            <li key={index}>{item}
-                                <img src={copyIMG} alt='copy' className='copy'></img>
-                            </li>
+                        <li key={index}>{item}
+                            <img src={copyIMG} alt='copy' className='copy'></img>
+                        </li>
                     ))
                 }
             </ul>

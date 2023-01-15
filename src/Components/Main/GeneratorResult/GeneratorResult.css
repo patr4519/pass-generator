@@ -16,10 +16,11 @@ ul {
 }
 
 li {
-    width: 240px;
+    width: 260px;
     display: flex;
     justify-content: space-between;
     padding: 3px;
+    align-items: center;
 }
 
 .copy {
