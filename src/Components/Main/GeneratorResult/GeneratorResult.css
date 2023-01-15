@@ -1,6 +1,6 @@
 .generatorResult {
     width: 400px;
-    height: 300px;
+    height: 355px;
     border: 1px solid black;
     margin: auto;
     padding-left: 10px;
@@ -13,4 +13,20 @@ ul {
     list-style-type: none;
     margin: 0 0;
     padding: 0 0;
+}
+
+li {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.copy {
+    width: 20px;
+    height: 20px;
+}
+
+.copy:hover {
+    opacity: 0.5;
 }
