@@ -38,3 +38,13 @@ header {
 .myLink>a:hover {
     color: black;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .title {
+        width: 130px;
+    }
+    .genSetWrapper {
+        width: 350px;
+    }
+}
