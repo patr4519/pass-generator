@@ -25,7 +25,7 @@ export const GeneratorSettings = () => {
         setGeneratedPass(passwords);
     }
 
-    React.useEffect(() => {        
+    React.useEffect(() => {
         if (state1 === false) {
             setSymbolsArr(symbolsArr.filter(item => !/[0-9]/g.test(item)));
         }
@@ -56,36 +56,63 @@ export const GeneratorSettings = () => {
         if (state4) {
             setSymbolsArr(prev => [...prev, '%', '*', ')', '(', '?', '@', '#', '$', '~']);
         }
-        if (state4 === false ) {
+        if (state4 === false) {
             setSymbolsArr(symbolsArr.filter(item => !/[%*)(?@#$~]/g.test(item)));
         }
     }, [state4])
-
-
 
     return (
         <>
             <div className="genSetWrapper">
                 <section>
                     <div className="checkBoxes">
-                        <label>
-                            <input type="checkbox" checked={state1} onChange={() => setState1(!state1)} /><span>Numbers</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" checked={state2} onChange={() => setState2(!state2)} /><span>Lower case letters</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" checked={state3} onChange={() => setState3(!state3)} /><span>Upper case letters</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" checked={state4} onChange={() => setState4(!state4)} /><span>Spec symbols</span>
-                        </label>
+                        <div className="togler">
+                            <label class="toggler-wrapper style-1">
+                                <input type="checkbox" checked={state1} onChange={() => setState1(!state1)} />
+                                <div class="toggler-slider">
+                                    <div class="toggler-knob"></div>
+                                </div>
+                            </label>
+                            <span className="toggleName">Numbers</span>
+                        </div>
+
+                        <div  className="togler">
+                            <label class="toggler-wrapper style-1">
+                                <input type="checkbox" checked={state2} onChange={() => setState2(!state2)} />
+                                <div class="toggler-slider">
+                                    <div class="toggler-knob"></div>
+                                </div>
+                            </label>
+                            <span className="toggleName">Lower case letters</span>
+                        </div>
+
+                        <div  className="togler">
+                            <label class="toggler-wrapper style-1">
+                                <input type="checkbox" checked={state3} onChange={() => setState3(!state3)} />
+                                <div class="toggler-slider">
+                                    <div class="toggler-knob"></div>
+                                </div>
+                            </label>
+                            <span className="toggleName">Upper case letters</span>
+                        </div>
+
+                        <div  className="togler">
+                            <label class="toggler-wrapper style-1">
+                                <input type="checkbox" checked={state4} onChange={() => setState4(!state4)} />
+                                <div class="toggler-slider">
+                                    <div class="toggler-knob"></div>
+                                </div>
+                            </label>
+                            <span className="toggleName">Spec symbols</span>
+                        </div>
+
                         <label>
                             <span>Length of password: </span>
                             <input className="inputLength" type='number' value={lengthPass} onChange={(e) => setLengthPass(e.target.value)} max='20' min='6' />
                             <span> symbols</span>
                         </label>
                     </div>
+
                     <button className="button-89" role="button" type="button" onClick={generate}>Generate</button>
                 </section>
             </div>
