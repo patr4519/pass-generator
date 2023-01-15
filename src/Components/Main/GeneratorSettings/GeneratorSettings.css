@@ -4,16 +4,24 @@
     border: 1px solid black;
     margin: auto;
 }
+
 .checkBoxes {
     display: flex;
     flex-direction: column;
 }
-.checkBoxes > input {
+
+.checkBoxes>input {
     width: 20px;
 }
-.checkBoxes > label {
+
+.checkBoxes>label {
     padding: 3px;
 }
+
 .inputLength {
     width: 50px;
+}
+
+.generateButton {
+    
 }

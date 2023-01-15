@@ -86,7 +86,7 @@ export const GeneratorSettings = () => {
                             <span> symbols</span>
                         </label>
                     </div>
-                    <button type="button" onClick={generate}>Generate</button>
+                    <button className="generateButton" type="button" onClick={generate}>Generate</button>
                 </section>
             </div>
             {
