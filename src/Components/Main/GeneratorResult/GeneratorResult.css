@@ -22,7 +22,7 @@ li {
     align-items: center;
 }
 
-li:hover {
+li:active {
     color: rgb(255, 255, 255);
     text-shadow:
         0 0 5px #fff,
@@ -42,4 +42,5 @@ li:hover {
 
 .copy:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
